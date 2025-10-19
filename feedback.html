@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+</head>
+<body>
+<header>
+  <h1>TODAY'S NEWS</h1>
+  <img src="images/logo.png" alt="logo" width="150">
+</header>
+
+<main>
+  <h2>Feedback form</h2>
+  <form>
+    <fieldset>
+      <legend>Pesonal information</legend>
+      <label>Fullname: <input type="text" name="fullname" required></label><br>
+      <label>E-mail: <input type="email" name="email" required></label><br>
+      <label>Age: <input type="number" name="age" min="10" max="120" required></label><br>
+      <label>Education:
+        <select name="education" required>
+          <option>complete</option>
+          <option>incomplete</option>
+          <option>higher</option>
+          <option>vocational</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <p>Purpose of feedback:
+      <select name="purpose">
+        <option>cooperation</option>
+        <option>complaint about violation of property rights</option>
+        <option>offer</option>
+        <option>error detection</option>
+      </select>
+    </p>
+
+    <p>Details:<br>
+      <textarea name="details" cols="40" rows="5" maxlength="500"></textarea>
+    </p>
+
+    <p><label><input type="checkbox" required> I agree to the processing of information</label></p>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</main>
+</body>
+</html>
